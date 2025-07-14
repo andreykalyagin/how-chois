@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте GetComp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #4B57EA 0%, #8B4CEA 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="font-['Inter'] bg-gray-50 text-gray-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12 md:py-20">
+        <!-- Header -->
+        <header class="mb-12 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text fade-in">О проекте и нашей методике</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Честные обзоры техники без рекламных предпочтений</p>
+        </header>
+
+        <!-- Author Section -->
+        <div class="flex flex-col md:flex-row items-center gap-8 mb-16 p-6 bg-white rounded-xl shadow-md hover-scale fade-in">
+            <img src="https://i.postimg.cc/j2S2hpxM/image.png" alt="Главный редактор GetComp" class="w-48 md:w-56 h-auto rounded-xl object-cover shadow-md">
+            <div class="flex-1">
+                <div class="flex items-center mb-3">
+                    <span class="text-3xl mr-3">👋</span>
+                    <h2 class="text-2xl font-bold">Привет! Я Алексей Трофимов</h2>
+                </div>
+                <p class="text-gray-600 leading-relaxed">
+                    Я главный редактор GetComp. Этот проект мы делаем для тех, кто устал от фейковых обзоров и рекламных рейтингов. У нас всё просто: мы тестируем технику честно, рассказываем понятно и выбираем так, как выбрали бы для себя.
+                </p>
+            </div>
+        </div>
+
+        <!-- Methodology Section -->
+        <div class="mb-16 space-y-10">
+            <h2 class="text-3xl font-bold mb-8 text-center gradient-text fade-in">🔍 Как мы выбираем лучшие товары</h2>
+
+            <!-- Step 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow fade-in">
+                <div class="flex items-center mb-4">
+                    <div class="bg-indigo-100 text-indigo-600 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">1</div>
+                    <h3 class="text-xl font-semibold">Предварительный отбор</h3>
+                </div>
+                <p class="text-gray-600 pl-14">
+                    Мы собираем данные с маркетплейсов, Wordstat и рейтингов. Составляем таблицу, подключаем экспертов, фильтруем мусор, добавляем важное и определяем, какие параметры реально важны.
+                </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow fade-in">
+                <div class="flex items-center mb-4">
+                    <div class="bg-purple-100 text-purple-600 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">2</div>
+                    <h3 class="text-xl font-semibold">Реальный опыт</h3>
+                </div>
+                <ul class="text-gray-600 pl-14 space-y-2 list-disc list-inside">
+                    <li>Читаем отзывы — только конструктивные</li>
+                    <li>Смотрим обзоры от реальных пользователей</li>
+                    <li>Анализируем данные от сервисных центров</li>
+                    <li>Изучаем западные рейтинги (Wirecutter, Notebookcheck)</li>
+                </ul>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow fade-in">
+                <div class="flex items-center mb-4">
+                    <div class="bg-blue-100 text-blue-600 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">3</div>
+                    <h3 class="text-xl font-semibold">Практические тесты</h3>
+                </div>
+                <p class="text-gray-600 pl-14">
+                    Мы покупаем технику сами (без помощи брендов). Тестируем по понятным сценариям: сушим, крошим лёд, пылесосим. Всё как у обычных людей дома.
+                </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow fade-in">
+                <div class="flex items-center mb-4">
+                    <div class="bg-green-100 text-green-600 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">4</div>
+                    <h3 class="text-xl font-semibold">Составление рейтинга</h3>
+                </div>
+                <p class="text-gray-600 pl-14">
+                    В итоговый материал попадают лучшие модели. Мы описываем их простыми словами, отмечаем плюсы и минусы, даём ссылки. Комиссия с партнёрок нас не подкупает — условия одинаковые для всех моделей.
+                </p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow fade-in">
+                <div class="flex items-center mb-4">
+                    <div class="bg-yellow-100 text-yellow-600 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">5</div>
+                    <h3 class="text-xl font-semibold">Обновления</h3>
+                </div>
+                <p class="text-gray-600 pl-14">
+                    Мы следим за новинками. Иногда модели поднимаются в рейтинге, иногда вылетают. Мы не держим в топе тех, кто стал хуже.
+                </p>
+            </div>
+        </div>
+
+        <!-- Principles Section -->
+        <div class="bg-indigo-50 p-8 rounded-xl mb-16 fade-in">
+            <h3 class="text-2xl font-bold mb-6 text-indigo-800">Наши принципы</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 text-indigo-600 p-2 rounded-lg mr-4">
+                            <i class="fas fa-shield-alt text-lg"></i>
+                        </div>
+                        <h4 class="font-semibold">Независимость</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm">Мы сами выбираем, что тестировать.</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 text-indigo-600 p-2 rounded-lg mr-4">
+                            <i class="fas fa-comment-alt text-lg"></i>
+                        </div>
+                        <h4 class="font-semibold">Простота</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm">Пишем понятным языком.</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 text-indigo-600 p-2 rounded-lg mr-4">
+                            <i class="fas fa-hand-holding-heart text-lg"></i>
+                        </div>
+                        <h4 class="font-semibold">Честность</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm">Не советуем то, чем не пользуемся.</p>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-3">
+                        <div class="bg-indigo-100 text-indigo-600 p-2 rounded-lg mr-4">
+                            <i class="fas fa-door-open text-lg"></i>
+                        </div>
+                        <h4 class="font-semibold">Открытость</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm">Готовы ответить на любые вопросы.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm">
+            <p class="mb-4">📬 Пишите нам: <a href="mailto:info@getcomp.ru" class="text-indigo-600 hover:text-indigo-800 font-medium">info@getcomp.ru</a></p>
+            <p>© 2023 GetComp. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple animation trigger
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeElements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(20px)';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
